@@ -1,0 +1,51 @@
+<body style=" height: 100%; width:100%; background-image: url(/assets/image/loginimg.jpg); background-size: cover; position: absolute;">
+  <!--Section: Content-->
+  <section class="p-5 my-md-5 text-center" >
+
+    <form ngForm (submit)=" loginUser()" class="my-5 mx-md-5" action="">
+
+      <div class="row">
+        <div class="col-md-4 mx-auto">
+          <!-- Material form login -->
+          <div class="card">
+
+            <!--Card content-->
+            <div class="card-body">
+
+              <!-- Form -->
+              <form class="text-center" style="color: #757575;" action="#!">
+
+                <h3 class="font-weight-bold my-4 pb-2 text-center dark-grey-text">LogIn</h3>
+
+                <!-- Name -->
+                <input type="username" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Username"  required
+         [(ngModel)]="model.name" name="name" #name='ngModel'>
+
+                <!-- Email -->
+                <input type="password" id="defaultSubscriptionFormEmail" class="form-control" placeholder="Password"  [(ngModel)]="model.password" name="password">
+                <!-- <small id="passwordHelpBlock" class="form-text text-right blue-text">
+                  <a href="">Recover Password</a>
+                </small> -->
+<br>
+               <!--  <div class="text-center">
+                  <button type="button" class="btn btn-outline-orange btn-rounded my-4 waves-effect">login</button>
+                </div> -->
+<div class="col-xs-2 text-center" >
+  <button type="submit" class="btn btn-success" >Login</button>
+</div>
+              </form>
+              <!-- Form -->
+
+            </div>
+
+          </div>
+          <!-- Material form login -->
+        </div>
+      </div>
+
+    </form>
+
+  </section>
+  <!--Section: Content-->
+</body>
+
